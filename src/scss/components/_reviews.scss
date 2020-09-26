@@ -1,0 +1,82 @@
+.reviews {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    margin-bottom: 16px;
+  }
+
+  &__logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &--yandex {
+      width: 80px;
+      height: 16px;
+
+      background-image: url('../images/yandex-market.svg');
+    }
+
+    &--google {
+      width: 60px;
+      height: 20px;
+
+      background-image: url('../images/google.svg');
+    }
+
+    &--2gis {
+      width: 54px;
+      height: 22px;
+
+      background-image: url('../images/2gis.svg');
+    }
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+  }
+
+  &__star {
+    position: relative;
+    width: 16px;
+    height: 16px;
+
+    background-image: url('../images/rating-star-gray.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__star:not(:last-child) {
+    margin-right: 3px;
+  }
+
+  &__star.checked {
+    background-image: url('../images/rating-star-yellow.svg');
+  }
+
+  &__star.half-checked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background-image: url('../images/rating-star-half.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews {
+    padding-top: 5px;
+  }
+}

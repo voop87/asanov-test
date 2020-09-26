@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-top: 1px solid $grey-lines-color;
+
+  &__top {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    width: 78.12%;
+    margin-left: 21.88%;
+  }
+}

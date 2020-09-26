@@ -1,0 +1,56 @@
+.mobile-menu {
+  margin-bottom: 56px;
+
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    padding-bottom: 8px;
+  }
+
+  &__btn {
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    background-color: $grey-fill-color;
+    border-radius: 8px;
+    color: $main-color;
+  }
+
+  &__btn--load-more {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn--load-more span {
+    margin-right: 8px;
+  }
+
+  &__btn:hover,
+  &__btn:active {
+    background-color: $pink-color;
+    color: $bg-color;
+  }
+
+  &__btn svg {
+    margin-right: 10px;
+  }
+
+  &__btn--load-more svg {
+    margin-right: 0;
+  }
+
+  &__btn:hover svg,
+  &__btn:active svg {
+    fill: $bg-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

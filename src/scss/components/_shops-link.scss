@@ -1,0 +1,12 @@
+.shops-link {
+  cursor: pointer;
+
+  &:hover {
+    color: $pink-color;
+    text-decoration: none;
+
+    & svg {
+      fill: $pink-color;
+    }
+  }
+}

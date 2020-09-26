@@ -1,0 +1,142 @@
+.menu {
+  &__btn {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+
+    background-image: url('../images/close-big.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__list {
+    z-index: 2;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    min-height: 95vh;
+    padding: 10px 23.75% 10px 4.69%;
+
+    background-color: $bg-color;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  &__item svg {
+    margin-left: 32px;
+  }
+
+  &__item::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 0;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../images/arrow-left.svg');
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    width: 86%;
+    margin: 0;
+    padding: 0 6px;
+
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  &__item--closed::after {
+    left: 100%;
+    background-image: url('../images/arrow-right.svg');
+  }
+
+  &__item--closed svg {
+    margin-left: 0;
+  }
+
+  &__item--closed > .menu__submenu {
+    display: none;
+  }
+
+  &__item--rotang svg,
+  &__item--premium svg {
+    margin-left: 0;
+  }
+
+  &__item--rotang::after,
+  &__item--premium::after {
+    display: none;
+  }
+
+  &__item--more-info {
+    border-top: 1px solid $grey-lines-color;
+  }
+
+  &--closed > .menu__btn {
+    background-image: url('../images/burger.svg');
+  }
+
+  &--closed > .menu__list {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu {
+    z-index: 3;
+    position: absolute;
+    top: 71px;
+    left: 0;
+    width: 21.88%;
+    min-height: 800px;
+
+    &__btn {
+      display: none;
+    }
+
+    &__list {
+      position: static;
+      height: auto;
+      min-height: 720px;
+      padding: 0;
+
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    &__item {
+      position: relative;
+      padding: 10px 20px;
+    }
+
+    &__item:hover,
+    &__item:active {
+      background-color: $light-pink-color;
+    }
+
+    &__item::after {
+      left: 86%;
+      background-image: url('../images/arrow-right.svg');
+    }
+
+    &__item--closed::after {
+      left: 86%;
+    }
+
+    &__item svg {
+      margin-left: 0;
+    }
+  }
+}

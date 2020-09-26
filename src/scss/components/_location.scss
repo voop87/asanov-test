@@ -1,0 +1,42 @@
+.location {
+  &__current {
+    cursor: pointer;
+    padding: 8px 0;
+    padding-right: 30px;
+  }
+
+  &__current::after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    width: 11px;
+    height: 8px;
+
+    background-image: url('../images/arrow-down.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__list {
+    padding-bottom: 20px;
+    background-color: $bg-color;
+  }
+
+  &__item {
+    margin-right: auto;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border-bottom: 1px solid $grey-lines-color;
+  }
+
+  &__item:hover {
+    cursor: pointer;
+    background-color: $light-pink-color;
+  }
+}
+
+.select--active .location__current::after {
+  background-image: url('../images/arrow-up.svg');
+}

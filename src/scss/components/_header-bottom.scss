@@ -1,0 +1,43 @@
+.header-bottom {
+  & .row {
+    flex-direction: column;
+  }
+
+  &__login,
+  &__cart {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-bottom {
+    width: 78.12%;
+    margin-left: 21.88%;
+    margin-bottom: 39px;
+    padding: 16px 0;
+
+    & .row {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__form {
+      width: 73.7%;
+      margin-right: 27px;
+    }
+
+    &__location {
+      display: none;
+    }
+
+    &__login,
+    &__cart {
+      display: flex;
+      align-items: center;
+    }
+
+    &__login {
+      margin-right: 60px;
+    }
+  }
+}

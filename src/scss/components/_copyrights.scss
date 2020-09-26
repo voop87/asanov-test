@@ -1,0 +1,46 @@
+.copyrights {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  &__privacy-policy {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__author-link {
+    display: flex;
+  }
+
+  &__author-link::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+
+    background-image: url('../images/star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyrights {
+    position: relative;
+    width: 100%;
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__author-link {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

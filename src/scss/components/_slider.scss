@@ -1,0 +1,33 @@
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    z-index: 2;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    fill: none;
+  }
+
+  .swiper-button-prev {
+    left: 91.6%;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}

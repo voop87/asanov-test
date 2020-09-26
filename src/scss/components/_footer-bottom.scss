@@ -1,0 +1,28 @@
+.footer-bottom {
+  &__payment {
+    margin-bottom: 32px;
+  }
+
+  &__social {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-bottom {
+    justify-content: flex-end;
+
+    &__social {
+      margin-right: 52px;
+    }
+  }
+}

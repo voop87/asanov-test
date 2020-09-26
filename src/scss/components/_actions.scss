@@ -1,0 +1,49 @@
+.actions {
+  width: 88px;
+
+  &__location,
+  &__shops-link {
+    display: none;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+
+    &__location {
+      display: block;
+      margin-right: 36px;
+    }
+
+    &__shops-link {
+      display: flex;
+    }
+
+    &__link {
+      font-size: 1.4rem;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+
+    &__phone {
+      margin-left: auto;
+    }
+
+    &__login,
+    &__cart {
+      display: none;
+    }
+  }
+}

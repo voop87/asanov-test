@@ -1,0 +1,38 @@
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__shops-link,
+  &__phone-link {
+    display: flex;
+  }
+
+  &__shops-link {
+    padding-right: 10px;
+  }
+
+  &__phone-link:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__phone-link:before {
+    margin-right: 5px;
+    background-image: url('../images/phone.svg');
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-top {
+    &__phone-link {
+      display: none;
+    }
+  }
+}

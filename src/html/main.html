@@ -1,0 +1,599 @@
+<section class="mobile-menu">
+  <h1 class="visually-hidden">Интернет-магазин мебели и товаров для дома.</h1>
+  <div class="container">
+    <div class="row">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="sofa" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#sofa-icon"></use>
+            </svg>
+            <span>Диваны и кресла</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="closet" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#closet-icon"></use>
+            </svg>
+            <span>Шкафы</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="kitchen" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#kitchen-icon"></use>
+            </svg>
+            <span>Мебель для кухни</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="room" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#room-icon"></use>
+            </svg>
+            <span>Гостиные</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="bedroom" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#bedroom-icon"></use>
+            </svg>
+            <span>Спальни</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="hall" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#hall-icon"></use>
+            </svg>
+            <span>Мебель для прихожей</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="child" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#child-icon"></use>
+            </svg>
+            <span>Детская мебель</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="table" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#table-icon"></use>
+            </svg>
+            <span>Столы и стулья</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="office" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#office-icon"></use>
+            </svg>
+            <span>Офисная мебель</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="rotang" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#rotang-icon"></use>
+            </svg>
+            <span>Мебель из ротанга</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="premium" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#premium-icon"></use>
+            </svg>
+            <span>Мебель премиум-класса</span>
+          </button>
+        </li>
+        <li class="mobile-menu__item">
+          <button class="mobile-menu__btn" id="more-info" type="button">
+            <svg width="28" height="28">
+              <use href="images/sprite.svg#more-info-icon"></use>
+            </svg>
+            <span>Условия покупки</span>
+          </button>
+        </li>
+      </ul>
+      <button class="mobile-menu__btn mobile-menu__btn--load-more" id="loadmore">
+        <span>Загрузить ещё</span>
+        <svg width="10" height="6">
+          <use href="images/sprite.svg#arrow-down-icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="promo">
+  <div class="container">
+    <div class="row">
+      <h2 class="promo__title">Мы рекомендуем</h2>
+
+      <div class="swiper-button-prev">
+        <svg width="32" height="32">
+          <use href="images/sprite.svg#slider-arrow-icon"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg width="32" height="32">
+          <use href="images/sprite.svg#slider-arrow-icon"></use>
+        </svg>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper-container promo__slider">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper">
+          <!-- Slides -->
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-1">
+              <span class="product-card__tag product-card__tag--discount"></span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow"></span>
+              <span class="product-card__tag product-card__tag--bestprice-pink"></span>
+              <span class="product-card__tag product-card__tag--gift"></span>
+              <img class="product-card__image" src="images/products/product-1.png" alt="Фото товара" width="132" height="120">
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Одеяло Овечья шерсть универсал 1400мм</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old"></span>
+                    <span class="product-card__price--new">1 790</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty"></span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty"></span>
+                    <span class="card-description__depth empty">2050 мм (Г)</span>
+                    <span class="card-description__width empty">1400 мм (Ш)</span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty"></span>
+                    <span class="card-description__length empty"></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-2">
+              <span class="product-card__tag product-card__tag--discount">-40%</span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow"></span>
+              <span class="product-card__tag product-card__tag--bestprice-pink"></span>
+              <span class="product-card__tag product-card__tag--gift"></span>
+              <img class="product-card__image" src="./images/products/product-2.png" alt="Фото товара" width="132" height="120">
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Подушка классик ортопедическая VL3.2</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old">6 320</span>
+                    <span class="product-card__price--new">3 790</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty"></span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty"></span>
+                    <span class="card-description__depth empty"></span>
+                    <span class="card-description__width empty"></span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty"></span>
+                    <span class="card-description__length empty"></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-3">
+              <span class="product-card__tag product-card__tag--discount">-40%</span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow"></span>
+              <span class="product-card__tag product-card__tag--bestprice-pink"></span>
+              <span class="product-card__tag product-card__tag--gift"></span>
+              <img class="product-card__image" src="./images/products/product-3.png" alt="Фото товара" width="132" height="120">
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Подушка двухволновая ортопедическая VL3.2</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old">5 820</span>
+                    <span class="product-card__price--new">3 490</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty"></span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty"></span>
+                    <span class="card-description__depth empty"></span>
+                    <span class="card-description__width empty"></span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty"></span>
+                    <span class="card-description__length empty"></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-4">
+              <span class="product-card__tag product-card__tag--discount"></span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow"></span>
+              <span class="product-card__tag product-card__tag--bestprice-pink"></span>
+              <span class="product-card__tag product-card__tag--gift"></span>
+              <img class="product-card__image" src="./images/products/product-4.png" alt="Фото товара" width="132" height="120">
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Комплект постельного белья "Формула-1" 1500 мм</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old">2 480</span>
+                    <span class="product-card__price--new">1 490</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty"></span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty"></span>
+                    <span class="card-description__depth empty"></span>
+                    <span class="card-description__width empty"></span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty"></span>
+                    <span class="card-description__length empty"></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-5">
+              <span class="product-card__tag product-card__tag--discount"></span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow">Лучшая цена</span>
+              <span class="product-card__tag product-card__tag--bestprice-pink"></span>
+              <span class="product-card__tag product-card__tag--gift"></span>
+              <img class="product-card__image" src="./images/products/product-5.png" alt="Фото товара" width="132" height="120">
+              <ul class="product-card__color-list" aria-label="Доступные цвета">
+                <li class="product-card__color-item product-card__color-item--red" aria-label="Красный"></li>
+                <li class="product-card__color-item product-card__color-item--orange" aria-label="Оранжевый"></li>
+                <li class="product-card__color-item product-card__color-item--sand" aria-label="Песочный"></li>
+              </ul>
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Диван-трансформер «Камертон-2»</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old">10 540</span>
+                    <span class="product-card__price--new">9 490</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty">Аккордеон</span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty">90 см (В)</span>
+                    <span class="card-description__depth empty">95 см (Г)</span>
+                    <span class="card-description__width empty">218 см (Ш)</span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty">160 см (Ш)</span>
+                    <span class="card-description__length empty">218 см (Д)</span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-6">
+              <span class="product-card__tag product-card__tag--discount"></span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow"></span>
+              <span class="product-card__tag product-card__tag--bestprice-pink"></span>
+              <span class="product-card__tag product-card__tag--gift">Кресло в подарок</span>
+              <img class="product-card__image" src="./images/products/product-6.png" alt="Фото товара" width="132" height="120">
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Диван с декоративными подушками "Олимп" (Нексус)</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old">10 540</span>
+                    <span class="product-card__price--new">12 290</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty"></span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty"></span>
+                    <span class="card-description__depth empty"></span>
+                    <span class="card-description__width empty"></span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty"></span>
+                    <span class="card-description__length empty"></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-7">
+              <span class="product-card__tag product-card__tag--discount"></span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow"></span>
+              <span class="product-card__tag product-card__tag--bestprice-pink"></span>
+              <span class="product-card__tag product-card__tag--gift"></span>
+              <img class="product-card__image" src="./images/products/product-7.png" alt="Фото товара" width="132" height="120">
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Диван "КАМЕЛИЯ"</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old">9 150</span>
+                    <span class="product-card__price--new">14 490</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty"></span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty"></span>
+                    <span class="card-description__depth empty"></span>
+                    <span class="card-description__width empty"></span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty"></span>
+                    <span class="card-description__length empty"></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="product-card in-stock" id="prod-8">
+              <span class="product-card__tag product-card__tag--discount"></span>
+              <span class="product-card__tag product-card__tag--bestprice-yellow"></span>
+              <span class="product-card__tag product-card__tag--bestprice-pink">Лучшая цена</span>
+              <span class="product-card__tag product-card__tag--gift"></span>
+              <img class="product-card__image" src="./images/products/product-8.png" alt="Фото товара" width="132" height="120">
+              <div class="product-card__inner">
+                <h3 class="product-card__title">Диван-кровать "Палермо 2" рогожка</h3>
+                <div class="product-card__order">
+                  <div class="product-card__price">
+                    <span class="product-card__price--old">16 810</span>
+                    <span class="product-card__price--new">12 790</span>
+                  </div>
+                  <div class="product-card__buttons">
+                    <button class="product-card__btn product-card__btn-buy" type="button" aria-label="В корзину">
+                      Купить
+                      <svg width="20" height="20">
+                        <use href="images/sprite.svg#cart-filled-icon"></use>
+                      </svg>
+                    </button>
+                    <div class="product-card__btn product-card__btn-quantity">
+                      <button class="product-card__btn-minus" type="button" aria-label="Убрать один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#minus-icon"></use>
+                        </svg>
+                      </button>
+                      <input class="product-card__quantity" type="number" value="1" min="0" max="99" readonly>
+                      <button class="product-card__btn-plus" type="button" aria-label="Добавить один">
+                        <svg width="24" height="24">
+                          <use href="images/sprite.svg#plus-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="product-card__in-stock">В наличии</span>
+                <dl class="product-card__description card-description">
+                  <dt class="card-description__title mechanism">Механизм:</dt>
+                  <dd class="card-description__text mechanism">
+                    <span class="empty"></span>
+                  </dd>
+                  <dt class="card-description__title proportions">Размеры:</dt>
+                  <dd class="card-description__text proportions">
+                    <span class="card-description__height empty"></span>
+                    <span class="card-description__depth empty"></span>
+                    <span class="card-description__width empty"></span>
+                  </dd>
+                  <dt class="card-description__title sleeping-area">Спальное место:</dt>
+                  <dd class="card-description__text sleeping-area">
+                    <span class="card-description__width empty"></span>
+                    <span class="card-description__length empty"></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

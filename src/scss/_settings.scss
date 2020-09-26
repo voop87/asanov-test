@@ -1,0 +1,83 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: $main-color;
+  background-color: $bg-color;
+}
+
+ul, dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  fill: $main-color;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 92%;
+  }
+
+  .main {
+    width: 78.12%;
+    margin-left: 21.88%;
+  }
+}

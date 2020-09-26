@@ -1,0 +1,25 @@
+.login {
+  &__link {
+    font-size: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .login {
+    &__link {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+
+      &:hover {
+        text-decoration: none;
+        color: $pink-color;
+      }
+    }
+
+    &__link svg {
+      margin-right: 7px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.select {
+  position: relative;
+
+  &__header {
+    display: flex;
+  }
+
+  &__current {
+    position: relative;
+  }
+
+  &--active .select__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body {
+    position: absolute;
+    top: 98%;
+    left: 0;
+    right: 0;
+    display: none;
+    overflow: hidden;
+  }
+}

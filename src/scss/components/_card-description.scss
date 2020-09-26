@@ -1,0 +1,39 @@
+.card-description {
+  &__title {
+    display: none;
+    margin-bottom: 2px;
+
+    font-weight: normal;
+    color: $grey-text-color;
+  }
+
+  &__text {
+    display: flex;
+    margin-bottom: 8px;
+
+    & span:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    & span:not(:last-child)::after {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-left: 6px;
+
+      background-image: url('../images/close-small.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    & span.empty:not(:last-child) {
+      margin-right: 0;
+    }
+
+    & span.empty:not(:last-child)::after {
+      display: none;
+    }
+  }
+}

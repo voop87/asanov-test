@@ -1,0 +1,48 @@
+.header {
+  padding: 14px 0;
+  background-color: $grey-fill-color;
+
+  &__nav {
+    margin-right: 17px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    width: 78.12%;
+    margin-left: 21.88%;
+    padding: 11px;
+
+    &__nav {
+      margin-right: 0;
+    }
+
+    &__logo {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 21.88%;
+      padding: 13px 20px;
+
+      background-color: $bg-color;
+    }
+
+    &__logo-img {
+      width: 240px;
+      height: 46px;
+    }
+
+    &__actions {
+      margin-left: 0;
+    }
+  }
+}

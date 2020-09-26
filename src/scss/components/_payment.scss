@@ -1,0 +1,50 @@
+.payment {
+  &__title {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 16px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__item--mastercard {
+    width: 30px;
+    height: 18px;
+
+    background-image: url('../images/mastercard.svg');
+  }
+
+  &__item--visa {
+    width: 26px;
+    height: 16px;
+
+    background-image: url('../images/visa.svg');
+  }
+
+  &__item--mir {
+    width: 56px;
+    height: 16px;
+
+    background-image: url('../images/mir.svg');
+  }
+
+  &__item--yandex {
+    width: 87px;
+    height: 16px;
+
+    background-image: url('../images/yandex.svg');
+  }
+}
